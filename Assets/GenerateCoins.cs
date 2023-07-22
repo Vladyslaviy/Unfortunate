@@ -14,6 +14,9 @@ public class GenerateCoins : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        coin_Object.transform.position = new Vector3 {x=0,y=1,z=2};
+        //GameObject newObject = Instantiate(coin_Object);
+        if (false)
         for (; current_coins < max_coins; current_coins++)
         {
             SpawnOjectRandomSpotGrounded(coin_Object, ObjectType.Coin);

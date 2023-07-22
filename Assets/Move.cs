@@ -10,14 +10,14 @@ public class Move : MonoBehaviour
 
     // Start is called before the first frame update
     private CharacterController controller;
-    
+
 
     private Vector3 moveDirection = Vector3.zero;
     private Vector3 moveDirection_ = Vector3.zero;
 
     private float turner;
     private float looker;
-    
+
 
 
     bool isJumping = false;
@@ -29,12 +29,12 @@ public class Move : MonoBehaviour
     private float speed = 20.0f;
 
     private float sensitivity = 5;
-    
+
     private float jumpHeight = 30.0f;
     private float jumpStartSpeed = 7.5f;
     private float jumpAccelerationSpeed = -0.05f;
     private float jumpCurrentSpeed = 1.0f;
-    
+
     private float fallMaxSpeed = 30.0f;
     private float fallStartSpeed = 1.0f;
     private float fallAccelerationSpeed = 0.05f;
@@ -43,8 +43,8 @@ public class Move : MonoBehaviour
     ///END PUPLIC
     //public Transform orientation;
 
-    
-    
+
+
     private void Start()
     {
         controller = gameObject.AddComponent<CharacterController>();
@@ -53,6 +53,7 @@ public class Move : MonoBehaviour
 
     void Update()
     {
+        //Debug.Log("TestSANCOUS");
         if (true)
         {
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")).normalized;
@@ -76,7 +77,7 @@ public class Move : MonoBehaviour
         {
             if (!IsGrounded())
             {
-                
+
                 fallCurrentSpeed = fallStartSpeed;
                 isFalling = true;
             }
@@ -129,30 +130,33 @@ public class Move : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        //Check for a match with the specified name on any GameObject that collides with your GameObject
+        Debug.Log("OnCollisionEnter");
         if (collision.gameObject.name == "CoinObject")
         {
-            transform.position = new Vector3{x=1,y=320,z=1 };
-            //If the GameObject's name matches the one you suggest, output this message in the console
-            Debug.Log("Do something here");
+            transform.position = new Vector3 { x = 1, y = 320, z = 1 };
+            Debug.Log("CoinObject");
         }
 
-        //Check for a match with the specific tag on any GameObject that collides with your GameObject
-        if (collision.gameObject.tag == "CoinObject")
+        if (collision.gameObject.tag != "CoinObject")
         {
             transform.position = new Vector3 { x = 1, y = 320, z = 1 };
-            //If the GameObject has the same tag as specified, output this message in the console
-            Debug.Log("Do something else here");
+            Debug.Log("NotCoinObject");
         }
     }
 
 
+
+    void OnCollisionStay(Collision collision)
+    {
+        Debug.Log("OnCollisionStay");
+        if (collision.gameObject.name == "CoinObject")
+        {
+            transform.position = new Vector3 { x = 1, y = 320, z = 1 };
+            Debug.Log("CoinObject");
+        }
+    }
     bool IsGrounded()
     {
         return Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.1f);
     }
-    void OnCollisionStay()
-    {
-    }
-
 }
