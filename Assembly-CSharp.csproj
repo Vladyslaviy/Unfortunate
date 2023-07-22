@@ -56,15 +56,18 @@
     <Analyzer Include="C:\Programs\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\PlayerJump.cs" />
+    <Compile Include="Assets\PlayerScripts\PlayerJump.cs" />
     <Compile Include="Assets\TransformCopy.cs" />
-    <Compile Include="Assets\Body_Rotation.cs" />
-    <Compile Include="Assets\Move2.cs" />
-    <Compile Include="Assets\CameraMovement.cs" />
-    <Compile Include="Assets\Move.cs" />
-    <Compile Include="Assets\CoinRoation.cs" />
+    <Compile Include="Assets\PlayerScripts\PickUpScript.cs" />
+    <Compile Include="Assets\PlayerScripts\Body_Rotation.cs" />
+    <Compile Include="Assets\PlayerScripts\Move2.cs" />
+    <Compile Include="Assets\PlayerScripts\CollisionEnter.cs" />
+    <Compile Include="Assets\PlayerScripts\CameraMovement.cs" />
+    <Compile Include="Assets\PlayerScripts\Move.cs" />
+    <Compile Include="Assets\LevelScripts\CoinRoation.cs" />
     <Compile Include="Assets\Multiplayer.cs" />
-    <Compile Include="Assets\GenerateCoins.cs" />
+    <Compile Include="Assets\LevelScripts\GenerateCoins.cs" />
+    <Compile Include="Assets\LevelScripts\EnemyMovement.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

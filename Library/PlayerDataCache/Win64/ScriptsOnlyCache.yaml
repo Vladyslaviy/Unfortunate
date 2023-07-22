@@ -4,10 +4,12 @@ ScriptsOnlyBuild:
     - Body_Rotation
     - CameraMovement
     - CoinRoation
+    - CollisionEnter
     - GenerateCoins
     - Move
     - Move2
     - Multiplayer
+    - PickUpScript
     - PlayerJump
     - TransformCopy
     Unity.CollabProxy.Editor.dll:
@@ -77,6 +79,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
     - Class: 65
@@ -94,37 +98,41 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1878}
     - Class: 114
-      Script: {instanceID: 2016}
+      Script: {instanceID: 1906}
     - Class: 114
-      Script: {instanceID: 2214}
+      Script: {instanceID: 2018}
     - Class: 114
-      Script: {instanceID: 2648}
+      Script: {instanceID: 2216}
     - Class: 114
-      Script: {instanceID: 2874}
+      Script: {instanceID: 2650}
     - Class: 114
-      Script: {instanceID: 3384}
+      Script: {instanceID: 2876}
     - Class: 114
-      Script: {instanceID: 4234}
+      Script: {instanceID: 3386}
     - Class: 114
-      Script: {instanceID: 4510}
+      Script: {instanceID: 4102}
     - Class: 114
-      Script: {instanceID: 5268}
+      Script: {instanceID: 4238}
     - Class: 114
-      Script: {instanceID: 5878}
+      Script: {instanceID: 4514}
     - Class: 114
-      Script: {instanceID: 6032}
+      Script: {instanceID: 5272}
     - Class: 114
-      Script: {instanceID: 6104}
+      Script: {instanceID: 5882}
     - Class: 114
-      Script: {instanceID: 6376}
+      Script: {instanceID: 6036}
     - Class: 114
-      Script: {instanceID: 6404}
+      Script: {instanceID: 6108}
     - Class: 114
-      Script: {instanceID: 6998}
+      Script: {instanceID: 6380}
     - Class: 114
-      Script: {instanceID: 7454}
+      Script: {instanceID: 6408}
     - Class: 114
-      Script: {instanceID: 7482}
+      Script: {instanceID: 7002}
+    - Class: 114
+      Script: {instanceID: 7458}
+    - Class: 114
+      Script: {instanceID: 7486}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -208,6 +216,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TransformCopy
+  - hash:
+      serializedVersion: 2
+      Hash: f6cecc6b68b75ef8f1a307b7e133b80e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PickUpScript
   - hash:
       serializedVersion: 2
       Hash: c8c3cb2c794a236f7b697d17e1f63087
@@ -486,6 +500,12 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
+      Hash: 1a9e863cea97c14a871d179ff226c1b9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CollisionEnter
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -744,7 +764,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 1a9e863cea97c14a871d179ff226c1b9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Move
@@ -816,7 +836,7 @@ ScriptsOnlyBuild:
     className: PlayModeRunnerCallback
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 1a9e863cea97c14a871d179ff226c1b9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CoinRoation
@@ -973,4 +993,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/amazi/Documents/Projects/Unity/Builds/Unfortunate Build 0.1.1/Project_1_Try_2.exe
+  playerPath: C:/Users/amazi/Documents/Projects/Unity/Builds/Unfortunate Build 0.1.2/Project_1_Try_2.exe
