@@ -2,16 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Move : MonoBehaviour
 {
 
 
-    
+
     // Start is called before the first frame update
     private CharacterController controller;
-    public Rigidbody rigidbody;
+
 
     private Vector3 moveDirection = Vector3.zero;
     private Vector3 moveDirection_ = Vector3.zero;
@@ -54,8 +53,6 @@ public class Move : MonoBehaviour
 
     void Update()
     {
-        
-        //Debug.Log("TestSANCOUS");
         if (true)
         {
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")).normalized;
@@ -130,10 +127,12 @@ public class Move : MonoBehaviour
 
     private float distToGround = 0f;
 
+
+
+
     bool IsGrounded()
     {
         return Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.1f);
     }
-    
 
 }

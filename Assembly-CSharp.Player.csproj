@@ -61,13 +61,14 @@
     <Compile Include="Assets\PlayerScripts\PickUpScript.cs" />
     <Compile Include="Assets\PlayerScripts\Body_Rotation.cs" />
     <Compile Include="Assets\PlayerScripts\Move2.cs" />
+    <Compile Include="Assets\LevelScripts\EnemyMovement.cs" />
     <Compile Include="Assets\PlayerScripts\CollisionEnter.cs" />
     <Compile Include="Assets\PlayerScripts\CameraMovement.cs" />
     <Compile Include="Assets\PlayerScripts\Move.cs" />
     <Compile Include="Assets\LevelScripts\CoinRoation.cs" />
     <Compile Include="Assets\Multiplayer.cs" />
     <Compile Include="Assets\LevelScripts\GenerateCoins.cs" />
-    <Compile Include="Assets\LevelScripts\EnemyMovement.cs" />
+    <Compile Include="Assets\LevelScripts\LabirintGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -700,6 +701,10 @@
     <ProjectReference Include="Unity.Services.Core.Environments.Player.csproj">
       <Project>{530E3AA6-B0DA-5676-6F43-75736FF334AC}</Project>
       <Name>Unity.Services.Core.Environments.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.ProGrids.Player.csproj">
+      <Project>{B75DD7B3-E017-D8AB-FE33-10347D6AE6DC}</Project>
+      <Name>Unity.ProGrids.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.State.Player.csproj">
       <Project>{17705F84-FA1A-5F3E-ED3A-ED763EF7C23A}</Project>

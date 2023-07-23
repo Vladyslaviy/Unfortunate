@@ -61,13 +61,14 @@
     <Compile Include="Assets\PlayerScripts\PickUpScript.cs" />
     <Compile Include="Assets\PlayerScripts\Body_Rotation.cs" />
     <Compile Include="Assets\PlayerScripts\Move2.cs" />
+    <Compile Include="Assets\LevelScripts\EnemyMovement.cs" />
     <Compile Include="Assets\PlayerScripts\CollisionEnter.cs" />
     <Compile Include="Assets\PlayerScripts\CameraMovement.cs" />
     <Compile Include="Assets\PlayerScripts\Move.cs" />
     <Compile Include="Assets\LevelScripts\CoinRoation.cs" />
     <Compile Include="Assets\Multiplayer.cs" />
     <Compile Include="Assets\LevelScripts\GenerateCoins.cs" />
-    <Compile Include="Assets\LevelScripts\EnemyMovement.cs" />
+    <Compile Include="Assets\LevelScripts\LabirintGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -781,6 +782,10 @@
       <Project>{14615A8D-070A-3ADC-330F-5FD4BBCDF4F4}</Project>
       <Name>Unity.Rider.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.ProGrids.Editor.csproj">
+      <Project>{FE3E1CA1-697B-781B-AF97-21F29AEE7F17}</Project>
+      <Name>Unity.ProGrids.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{F7BEFB32-32E5-C764-7910-450F7F4CDB49}</Project>
       <Name>UnityEngine.UI</Name>
@@ -812,6 +817,10 @@
     <ProjectReference Include="Unity.Timeline.Editor.csproj">
       <Project>{D6450B35-8CE5-66F2-5A15-10746DF3E197}</Project>
       <Name>Unity.Timeline.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.ProGrids.csproj">
+      <Project>{95AE80E0-1E6D-5D77-0322-0A26DCA36DDB}</Project>
+      <Name>Unity.ProGrids</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.csproj">
       <Project>{52D9D70C-DBC6-B68C-DBDF-4C79749A739B}</Project>
