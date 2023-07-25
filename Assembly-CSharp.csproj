@@ -63,12 +63,12 @@
     <Compile Include="Assets\PlayerScripts\Move2.cs" />
     <Compile Include="Assets\LevelScripts\EnemyMovement.cs" />
     <Compile Include="Assets\PlayerScripts\CollisionEnter.cs" />
+    <Compile Include="Assets\LevelScripts\LabirintGenerator.cs" />
     <Compile Include="Assets\PlayerScripts\CameraMovement.cs" />
     <Compile Include="Assets\PlayerScripts\Move.cs" />
     <Compile Include="Assets\LevelScripts\CoinRoation.cs" />
     <Compile Include="Assets\Multiplayer.cs" />
     <Compile Include="Assets\LevelScripts\GenerateCoins.cs" />
-    <Compile Include="Assets\LevelScripts\LabirintGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

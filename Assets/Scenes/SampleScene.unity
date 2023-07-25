@@ -808,6 +808,7 @@ MonoBehaviour:
   angleSample: {fileID: 1159116766}
   TangleSample: {fileID: 963766796}
   XangleSample: {fileID: 283228151}
+  Player: {fileID: 80016053}
 --- !u!1 &472690553
 GameObject:
   m_ObjectHideFlags: 0
