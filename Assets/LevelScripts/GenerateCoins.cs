@@ -6,6 +6,10 @@ using UnityEngine.UIElements;
 
 public class GenerateCoins : MonoBehaviour
 {
+    public float maxX = 20.0f;
+    public float minX = -20.0f;
+    public float maxZ = 20.0f;
+    public float minZ = -20.0f;
     enum ObjectType
     {
         Coin
@@ -22,7 +26,7 @@ public class GenerateCoins : MonoBehaviour
 
     //0.7
     List<GameObject> coins = new List<GameObject>();
-    int max_coins = 20;
+    int max_coins = 30;
     int current_coins = 0;
     void Update()
     {
@@ -40,11 +44,11 @@ public class GenerateCoins : MonoBehaviour
     }
     float getRandomXCoordinate()
     {
-        return (float)Math.Round((double)UnityEngine.Random.Range(-145.0f, 145.0f), 1);
+        return (float)Math.Round((double)UnityEngine.Random.Range(minX, maxX), 1);
     }
     float getRandomZCoordinate()
     {
-        return (float)Math.Round((double)UnityEngine.Random.Range(-145.0f, 145.0f), 1);
+        return (float)Math.Round((double)UnityEngine.Random.Range(minZ, maxZ), 1);
     }
     float getRandomYCoordinate()
     {
